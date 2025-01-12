@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+h1 {
+    color: #343a40;
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    color: black; /* Modification ajoutée */
+}
+
+button:focus {
+    outline: none;
+}
+
+.btn {
+    width: 14em; /* Augmenté pour que tout le texte soit bien contenu */
+    height: 3.5em; /* Augmenté légèrement pour s'assurer que le texte soit bien centré */
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 18px; /* Taille de police légèrement réduite pour éviter le dépassement */
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.5s;
+    line-height: center; /* Alignement vertical du texte au centre */
+    text-align: center; /* Alignement horizontal */
+}
+
+.btn:hover {
+    color: black;
+}
+
+.btn:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+.btn:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 90%;
+        margin-top: 15px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
