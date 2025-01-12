@@ -6,16 +6,72 @@ document.addEventListener('DOMContentLoaded', function() {
         // Liste de vos TPs
         const tps = [
             {
-                title: "TP1 - Site Portfolio",
-                date: "Mars 2024",
-                description: "Création d'un site portfolio responsive avec HTML, CSS et JavaScript",
-                tags: ["HTML", "CSS", "JavaScript"],
+                title: "TP1",
+                date: "Septembre 2024",
+                description: "introduction au BTS SIO, avec ces deux débouchées.",
+                tags: ["HTML", "CSS"],
                 link: "#",
                 github: "https://github.com/votre-compte/tp-portfolio"
             },
             {
-                title: "TP2 - Base de données",
-                date: "Mars 2024",
+                title: "TP2",
+                date: "Septembre 2024",
+                description: "page html ",
+                tags: ["HTML", "CSS"],
+                link: "#",
+                github: "https://github.com/votre-compte/tp-bdd"
+            },
+            {
+                title: "TP3",
+                date: "Septembre 2024",
+                description: "Création et gestion d'une base de données MySQL",
+                tags: ["SQL", "MySQL", "PHP"],
+                link: "#",
+                github: "https://github.com/votre-compte/tp-bdd"
+            },
+            {
+                title: "TP4",
+                date: "Octobre 2024",
+                description: "Création et gestion d'une base de données MySQL",
+                tags: ["SQL", "MySQL", "PHP"],
+                link: "#",
+                github: "https://github.com/votre-compte/tp-bdd"
+            },
+            {
+                title: "TP5",
+                date: "Octobre 2024",
+                description: "Création et gestion d'une base de données MySQL",
+                tags: ["SQL", "MySQL", "PHP"],
+                link: "#",
+                github: "https://github.com/votre-compte/tp-bdd"
+            },
+            {
+                title: "TP6",
+                date: "Octobre 2024",
+                description: "Création et gestion d'une base de données MySQL",
+                tags: ["SQL", "MySQL", "PHP"],
+                link: "#",
+                github: "https://github.com/votre-compte/tp-bdd"
+            },
+            {
+                title: "TP7",
+                date: "Octobre 2024",
+                description: "Création et gestion d'une base de données MySQL",
+                tags: ["SQL", "MySQL", "PHP"],
+                link: "#",
+                github: "https://github.com/votre-compte/tp-bdd"
+            },
+            {
+                title: "TP8",
+                date: "Octobre 2024",
+                description: "Création et gestion d'une base de données MySQL",
+                tags: ["SQL", "MySQL", "PHP"],
+                link: "#",
+                github: "https://github.com/votre-compte/tp-bdd"
+            },
+            {
+                title: "TP9",
+                date: "Octobre 2024",
                 description: "Création et gestion d'une base de données MySQL",
                 tags: ["SQL", "MySQL", "PHP"],
                 link: "#",
