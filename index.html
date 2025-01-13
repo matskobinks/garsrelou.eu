@@ -3,41 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>garsrelou</title>
+    <meta name="description" content="Portfolio de projets académiques - Découvrez mes travaux pratiques, missions et projets PHP">
+    <meta name="keywords" content="portfolio, développement web, projets étudiants, PHP, JavaScript">
+    <meta name="author" content="garsrelou">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="garsrelou - Portfolio">
+    <meta property="og:description" content="Portfolio de projets académiques - Découvrez mes travaux pratiques, missions et projets PHP">
+    <meta property="og:image" content="assets/images/[GARSRELOU].gif">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="garsrelou - Portfolio">
+    <meta name="twitter:description" content="Portfolio de projets académiques - Découvrez mes travaux pratiques, missions et projets PHP">
+    <meta name="twitter:image" content="assets/images/[GARSRELOU].gif">
+    
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <title>garsrelou - Portfolio</title>
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="assets/images/[GARSRELOU].gif" as="image">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">garsrelou</a>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="content/tp">Travaux Pratiques</a></li>
-                <li><a href="content/missions">Missions</a></li>
-                <li><a href="content/php">Projet PHP</a></li>
+    <header role="banner">
+        <nav class="navbar" role="navigation" aria-label="Navigation principale">
+            <a href="index.html" class="logo" aria-label="Accueil garsrelou">garsrelou</a>
+            <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+            <ul class="nav-links" id="nav-links" role="menubar">
+                <li role="none"><a href="index.html" class="active" role="menuitem" aria-current="page">Accueil</a></li>
+                <li role="none"><a href="content/tp" role="menuitem">Travaux Pratiques</a></li>
+                <li role="none"><a href="content/missions" role="menuitem">Missions</a></li>
+                <li role="none"><a href="content/php" role="menuitem">Projet PHP</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main role="main">
         <div class="container">
-            <img src="css/[GARSRELOU].gif" alt="logo">
+            <img src="assets/images/[GARSRELOU].gif" alt="Logo garsrelou" loading="lazy" decoding="async">
             <br><br><br><br><br>
-            <div class="grid-buttons">
-                <a href="content/tp/index.html" class="grid-button">
+            <div class="grid-buttons" role="navigation" aria-label="Navigation principale des sections">
+                <a href="content/tp/index.html" class="grid-button" role="button" aria-label="Accéder aux travaux pratiques">
                     <h2>Travaux Pratiques</h2>
                     <p>Découvrez mes réalisations pratiques</p>
                 </a>
-                <a href="content/missions/index.html" class="grid-button">
+                <a href="content/missions/index.html" class="grid-button" role="button" aria-label="Accéder aux missions">
                     <h2>Missions</h2>
                     <p>Explorez mes missions accomplies</p>
                 </a>
-                <a href="content/php/index.html" class="grid-button">
+                <a href="content/php/index.html" class="grid-button" role="button" aria-label="Accéder au projet PHP">
                     <h2>Projet PHP</h2>
                     <p>Consultez mon projet PHP</p>
                 </a>
@@ -45,12 +64,12 @@
         </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/mathis-barbier-guerbette-563268316/" class="social-link">LinkedIn</a>
-                <a href="https://github.com/matskobinks/" class="social-link">GitHub</a>
-                <a href="https://x.com/garsrelou" class="social-link">Twitter</a>
+            <div class="social-links" aria-label="Liens sociaux">
+                <a href="https://www.linkedin.com/in/mathis-barbier-guerbette-563268316/" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/matskobinks/" class="social-link" aria-label="GitHub">GitHub</a>
+                <a href="https://x.com/garsrelou" class="social-link" aria-label="Twitter">Twitter</a>
             </div>
             <div class="legal">
                 <p>&copy; 2024 garsrelou. aucun droits réservés.</p>
@@ -58,6 +77,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
