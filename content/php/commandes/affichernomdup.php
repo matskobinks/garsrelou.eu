@@ -1,4 +1,5 @@
 <html>
+    <head><link rel="stylesheet" href="/css/style.css"></head>
 <body>
 <?php
 @include("connexion.php"); 

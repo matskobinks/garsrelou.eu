@@ -7,7 +7,7 @@
             font-weight: bold;
         }
 </style>
-
+<link rel="stylesheet" href="/css/style.css">
 <?php
 $conn=mysqli_connect("garsrehadmin.mysql.db","garsrehadmin","LaChiennete123","garsrehadmin");
 echo '<div class="connexion-message">PARFAIT CONNEXION REUSSI</div>';
