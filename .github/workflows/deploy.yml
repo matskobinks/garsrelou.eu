@@ -1,25 +1,25 @@
-name: Deploy to OVH
+name: déploiement ovh
 
 on:
   push:
     branches:
-      - main  # Déploie à chaque push sur la branche main
+      - main
 
 jobs:
   ftp-deploy:
-    name: Deploy website via FTP
+    name: déploiement ovh via FTP
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: check répo
         uses: actions/checkout@v3
 
-      - name: Deploy via FTP
+      - name: outil déploiement
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: "./"  # Dossier à envoyer (ajuste si nécessaire)
-          server-dir: "/www/"  # Dossier distant sur OVH (ajuste selon ton arborescence)
-          protocol: ftp
+          local-dir: "./"  # tout ce qui va être envoyé, donc dcp jprends la racine. plus y'aura de fichier plus ca va etre long smr mais c pas grave
+          server-dir: "/www/"  # la ou les fichiers vont être envoyer. donc la c le dossier www dans ovh
+          protocol: ftp # jpourrais utiliser sftp mais relou jcomprends rien smr
