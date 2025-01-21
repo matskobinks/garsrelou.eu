@@ -3,78 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de projets académiques - Découvrez mes travaux pratiques, missions et projets PHP">
-    <meta name="keywords" content="portfolio, développement web, projets étudiants, PHP, JavaScript">
+    <meta name="description" content="Projet PHP de gestion de commandes réalisé dans le cadre de ma formation">
+    <meta name="keywords" content="portfolio, développement web, PHP, MySQL, projet">
     <meta name="author" content="garsrelou">
     
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="garsrelou">
-    <meta property="og:description" content="Portfolio de projets académiques - Découvrez mes travaux pratiques, missions et projets PHP">
-    <meta property="og:image" content="assets/images/[GARSRELOU].gif">
+    <link rel="preload" href="../../css/style.css" as="style">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="dns-prefetch" href="https://github.com">
+    <link rel="dns-prefetch" href="https://linkedin.com">
+    <link rel="dns-prefetch" href="https://x.com">
     
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="garsrelou - Portfolio">
-    <meta name="twitter:description" content="Portfolio de projets académiques - Découvrez mes travaux pratiques, missions et projets PHP">
-    <meta name="twitter:image" content="assets/images/[GARSRELOU].gif">
-    
-    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
-    <title>garsrelou</title>
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" href="assets/images/[GARSRELOU].gif" as="image">
+    <title>Projet PHP</title>
 </head>
 <body>
     <header role="banner">
         <nav class="navbar" role="navigation" aria-label="Navigation principale">
-            <a href="index.html" class="logo" aria-label="Accueil garsrelou">garsrelou</a>
+            <a href="../../index.html" class="logo" aria-label="Retour à l'accueil">garsrelou</a>
             <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </button>
             <ul class="nav-links" id="nav-links" role="menubar">
-                <li role="none"><a href="index.html" class="active" role="menuitem" aria-current="page">Accueil</a></li>
-                <li role="none"><a href="content/tp" role="menuitem">Travaux Pratiques</a></li>
-                <li role="none"><a href="content/missions" role="menuitem">Missions</a></li>
-                <li role="none"><a href="content/php" role="menuitem">Projet PHP</a></li>
+                <li role="none"><a href="../../index.html" role="menuitem">Accueil</a></li>
+                <li role="none"><a href="../tp" role="menuitem">Travaux Pratiques</a></li>
+                <li role="none"><a href="../missions" role="menuitem">Missions</a></li>
+                <li role="none"><a href="../php" class="active" role="menuitem" aria-current="page">Projet PHP</a></li>
             </ul>
         </nav>
     </header>
 
-    <main role="main" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-        <div class="container" style="text-align: center;">
-            <img src="assets/images/[GARSRELOU].gif" alt="Logo garsrelou" loading="lazy" decoding="async">
-            <br><br><br>
-            <div class="grid-buttons" role="navigation" aria-label="Navigation principale des sections">
-                <a href="content/tp/index.html" class="grid-button" role="button" aria-label="Accéder aux travaux pratiques">
-                    <h2>Travaux Pratiques</h2>
-                    <p>Découvrez mes réalisations pratiques</p>
-                </a>
-                <a href="content/missions/index.html" class="grid-button" role="button" aria-label="Accéder aux missions">
-                    <h2>Missions</h2>
-                    <p>Explorez mes missions accomplies</p>
-                </a>
-                <a href="content/php/index.html" class="grid-button" role="button" aria-label="Accéder au projet PHP">
-                    <h2>Projet PHP</h2>
-                    <p>Consultez mon projet PHP</p>
-                </a>
-            </div>
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="../../index.html">Accueil</a>
+        <span class="separator" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">Projet PHP</span>
+    </nav>
+
+    <main role="main">
+        <div class="container">
+            <h1>Projet PHP</h1>
+            <section class="project-section" role="region" aria-label="Description du projet">
+                <div class="project-info">
+                    <h2>Gestion de Commandes</h2>
+                </div>
+                <p class="project-description">
+                    Système de gestion de commandes développé en PHP avec une base de données MySQL.
+                </p>
+                <div class="features">
+                    <h3>Fonctionnalités principales</h3>
+                    <ul>
+                        <li>Page de connexion simple (sans protection)</li>
+                        <li>Base de données relationnelle</li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <a href="commandes/index.html" class="grid-button" role="button" aria-label="Accéder au projet de gestion de commandes">
+                        <h3>Voir le projet</h3>
+                        <p>Découvrez le système de gestion de commandes</p>
+                    </a>
+                </div>
+            </section>
         </div>
     </main>
 
     <footer role="contentinfo">
         <div class="footer-content">
             <div class="social-links" aria-label="Liens sociaux">
-                <a href="https://www.linkedin.com/in/mathis-barbier-guerbette-563268316/" class="social-link" aria-label="LinkedIn">LinkedIn</a>
-                <a href="https://github.com/matskobinks/" class="social-link" aria-label="GitHub">GitHub</a>
-                <a href="https://x.com/garsrelou" class="social-link" aria-label="Twitter">Twitter</a>
+                <a href="https://www.linkedin.com/in/mathis-barbier-guerbette-563268316/" class="social-link" aria-label="LinkedIn" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/matskobinks/" class="social-link" aria-label="GitHub" rel="noopener">GitHub</a>
+                <a href="https://x.com/garsrelou" class="social-link" aria-label="Twitter" rel="noopener">Twitter</a>
             </div>
             <div class="legal">
-                <p>&copy; 2024 garsrelou.</p>
+                <p>&copy; 2024 garsrelou. aucun droits réservés.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js" defer></script>
+    <script src="../../js/main.js" defer></script>
 </body>
 </html> 
