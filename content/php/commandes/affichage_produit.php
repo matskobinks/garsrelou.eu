@@ -1,6 +1,6 @@
 <html>
     <head>
-    <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
     <?php
@@ -28,7 +28,7 @@
     <?php }?>
     </table></center>
     <br><br>
-    <center><a href="index2.html">Retour Acceuil</a></center>
+    <center><a href="index2.html" class="back-button">Retour Accueil</a></center>
 <?php
     mysqli_close($conn);?>
     </body>
