@@ -588,3 +588,78 @@ h1 {
     outline-offset: 2px;
     box-shadow: 0 0 10px var(--secondary-color);
 }
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(138, 43, 226, 0.1);
+}
+
+.style1, .style2 {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.style1:focus, .style2:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(138, 43, 226, 0.2);
+}
+
+.style {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"].style {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+input[type="submit"].style:hover {
+    background-color: #7b1fa2;
+}
+
+input[type="reset"].style {
+    background-color: #f5f5f5;
+    color: #666;
+}
+
+input[type="reset"].style:hover {
+    background-color: #e0e0e0;
+}
+
+form a {
+    display: block;
+    margin-top: 1rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+form h1 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
