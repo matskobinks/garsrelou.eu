@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Insert into the database
     $stmt = $conn->prepare('INSERT INTO login (id, mdp) VALUES (?, ?)');
-    $stmt->bind_param('sss', $id, mdp_hash($mdp, mdp_DEFAULT));
+    $stmt->bind_param($id, mdp_hash($mdp, mdp_DEFAULT));
 
     if ($stmt->execute()) {
         echo 'Registration successful!';
