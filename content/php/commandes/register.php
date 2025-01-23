@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $hashed_password = password_hash($mdp, PASSWORD_DEFAULT);
     
     // Prepare and execute insert statement
-    $sql = "INSERT INTO utilisateurs (id, mdp) VALUES (?, ?)";
+    $sql = "INSERT INTO login (id, mdp) VALUES (?, ?)";
     $stmt = $conn->prepare($sql);
     
     if ($stmt) {
