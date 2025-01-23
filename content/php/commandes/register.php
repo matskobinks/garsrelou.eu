@@ -34,23 +34,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Database connection
-    $conn=mysqli_connect("garsrehadmin.mysql.db","garsrehadmin","LaChiennete123","garsrehadmin");
+    $conn = mysqli_connect("garsrehadmin.mysql.db", "garsrehadmin", "LaChiennete123", "garsrehadmin");
 
     if ($conn->connect_error) {
         die('Connection failed: ' . $conn->connect_error);
     }
 
-    // Insert into the database
-    $stmt = $conn->prepare('INSERT INTO login (id, mdp) VALUES (?, ?)');
-    $stmt->bind_param($id, mdp_hash($mdp, mdp_DEFAULT));
-
-    if ($stmt->execute()) {
-        echo 'Registration successful!';
+    // Hash password for security
+    $hashed_password = password_hash($mdp, PASSWORD_DEFAULT);
+    
+    // Prepare and execute insert statement
+    $sql = "INSERT INTO utilisateurs (id, mdp) VALUES (?, ?)";
+    $stmt = $conn->prepare($sql);
+    
+    if ($stmt) {
+        $stmt->bind_param("ss", $id, $hashed_password);
+        if ($stmt->execute()) {
+            echo "Registration successful!";
+        } else {
+            echo "Error during registration: " . $stmt->error;
+        }
+        $stmt->close();
     } else {
-        echo 'Error: ' . $stmt->error;
+        echo "Error preparing statement: " . $conn->error;
     }
 
-    $stmt->close();
+    // Close connection
     $conn->close();
 }
 ?>
