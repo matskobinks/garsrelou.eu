@@ -39,16 +39,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($conn->connect_error) {
         die('Connection failed: ' . $conn->connect_error);
     }
-
-    // Hash password for security
-    $hashed_password = password_hash($mdp, PASSWORD_DEFAULT);
     
     // Prepare and execute insert statement
     $sql = "INSERT INTO login (id, mdp) VALUES (?, ?)";
     $stmt = $conn->prepare($sql);
     
     if ($stmt) {
-        $stmt->bind_param("ss", $id, $hashed_password);
+        $stmt->bind_param("ss", $id, $mdp);
         if ($stmt->execute()) {
             echo "Registration successful!";
         } else {
