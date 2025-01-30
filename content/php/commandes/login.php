@@ -8,7 +8,7 @@
     $a=$_POST["id"];
     $b=$_POST["mdp"];
 
-    $requete= "SELECT * from login where id= '$a' and mdp= '$b' ";
+    $requete= "SELECT * from logindb where id= '$a' and mdp= '$b' ";
     $resultat=mysqli_query($conn, $requete);
 
     $ligne=mysqli_num_rows($resultat);
