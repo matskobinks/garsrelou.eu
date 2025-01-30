@@ -18,7 +18,7 @@ ini_set('display_errors', 1);
     if ($ligne==1)
         header("location:index2.html");
     else
-        header("location:faux.html");
+        header("location:index2.html");
 ?>
 </body>
 </html>
