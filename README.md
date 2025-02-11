@@ -1,3 +1,9 @@
-# garsrelou.eu
+# beta.garsrelou.eu
 
-voila mon site smr jespere vous allez kiffer la team 😎
+host netlify subdomain ovh 
+ya plus aucun fichier de garsrelou.eu
+
+npm install
+npm run dev
+
+😎
